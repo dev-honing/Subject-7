@@ -1,5 +1,7 @@
 // src/Component/Container.tsx
 
+import "./Container.css";
+
 // 함수형 컴포넌트 Container 생성
 const Container = () => {
   return (
