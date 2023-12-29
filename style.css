@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+#root {
   width: 100vw;
   height: 100vh; /* 화면 크기에 딱 맞도록 설정 */
   display: flex;
+  padding: 5rem;
   flex-direction: row;
   justify-content: center;
   background-color: #e8e8e8;
@@ -20,11 +21,11 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
-  overflow: hidden;
 }
 
 #index * {
   display: flex;
+  flex-direction: column; /* li가 세로로 나열되도록 설정 */
 }
 
 #index li {
@@ -36,6 +37,7 @@ body {
   font-weight: 400;
   line-height: normal;
   border: 1px dotted #353535;
+  flex-grow: 1; /* 남은 높이를 차지하도록 설정 */
 }
 
 /*! 구분선 기준 우측 */
@@ -46,7 +48,6 @@ body {
   flex-direction: column;
   border-left: 1px solid #a5a5a5;
   padding-left: 1rem;
-  overflow: hidden;
 }
 
 #container * {
