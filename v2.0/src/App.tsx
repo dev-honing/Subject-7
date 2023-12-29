@@ -1,7 +1,9 @@
 // src/App.tsx
 
+import Container from "./Component/Container";
+
 const App = () => {
-  return <h1>Hello, CRA!</h1>;
+  return <Container />;
 };
 
 export default App;
