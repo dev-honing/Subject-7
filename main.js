@@ -11,3 +11,30 @@ function createLi(name) {
   // 생성한 li 태그를 index에 자식 요소로 추가
   index.appendChild(liElement);
 }
+
+// li 태그를 index에 자식 요소로 추가하는 함수
+function appendToIndex() {
+  // 학생 이름 배열
+  const studentName = [
+    "김우진",
+    "김현",
+    "방승희",
+    "변호녕",
+    "소사무엘",
+    "송영준",
+    "신동현",
+    "오승민",
+    "유승민",
+    "윤준현",
+    "이민구",
+    "이유안",
+    "이채이",
+    "정영식",
+    "최성민",
+    "최은철",
+    "홍문기",
+  ];
+
+  // 각 학생 이름에 대해 createLi 함수를 호출해 li 태그 생성 및 이름 추가
+  studentName.forEach(name => createLi(name));
+}
