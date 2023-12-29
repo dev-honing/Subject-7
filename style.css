@@ -6,8 +6,7 @@
 
 body {
   width: 100vw;
-  height: calc(100vh - 10rem);
-  margin-top: 10rem;
+  height: 100vh; /* 화면 크기에 딱 맞도록 설정 */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,10 +16,11 @@ body {
 /*! 구분선 기준 좌측 */
 #index {
   width: 150px; /* 임의값 */
-  height: calc(800px - 15px);
+  height: 100%; /* 화면 크기에 딱 맞도록 설정 */
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
+  overflow: hidden;
 }
 
 #index * {
@@ -35,17 +35,18 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border: 1px dotted #353535
+  border: 1px dotted #353535;
 }
 
 /*! 구분선 기준 우측 */
 #container {
   width: 500px; /* 요구사항 */
-  height: calc(800px - 15px);
+  height: 100%; /* 화면 크기에 딱 맞도록 설정 */
   display: flex;
   flex-direction: column;
   border-left: 1px solid #a5a5a5;
   padding-left: 1rem;
+  overflow: hidden;
 }
 
 #container * {
@@ -60,9 +61,11 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+
 .content-introduce {
   flex-direction: column;
 }
+
 .introduce {
   margin-top: 2rem;
   color: #919191;
@@ -90,7 +93,6 @@ body {
 
 .forte {
   margin-top: 1rem;
-  /* margin-bottom: 10rem; */
   color: #919191;
   text-align: justify;
   font-family: Inter;
@@ -103,6 +105,7 @@ body {
 .searchForm {
   flex-direction: column;
 }
+
 .searchName {
   height: 32px;
   border-radius: 10px;
@@ -111,6 +114,7 @@ body {
   margin-bottom: 1rem;
   text-indent: 1rem;
 }
+
 .btn-Show {
   height: 64px;
   border-radius: 10px;
