@@ -17,25 +17,31 @@ body {
 /*! 구분선 기준 좌측 */
 #index {
   width: 150px; /* 임의값 */
+  height: calc(800px - 15px);
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
 }
 
-/* li는 동적으로 생성할 예정임 */
+#index * {
+  display: flex;
+}
+
 #index li {
+  margin: 10px;
   color: #353535;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  border: 1px dotted #353535
 }
 
 /*! 구분선 기준 우측 */
 #container {
   width: 500px; /* 요구사항 */
-  /* height: calc(100vh); */
+  height: calc(800px - 15px);
   display: flex;
   flex-direction: column;
   border-left: 1px solid #a5a5a5;
@@ -84,7 +90,7 @@ body {
 
 .forte {
   margin-top: 1rem;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   color: #919191;
   text-align: justify;
   font-family: Inter;
@@ -101,7 +107,8 @@ body {
   height: 32px;
   border-radius: 10px;
   background: #f3f3f3;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   text-indent: 1rem;
 }
 .btn-Show {
