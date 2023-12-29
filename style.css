@@ -13,14 +13,24 @@ body {
   background-color: #e8e8e8;
 }
 
-/* 구분선 기준 좌측 */
+/*! 구분선 기준 좌측 */
 #index {
   width: 150px; /* 임의값 */
   display: flex;
   flex-direction: column;
 }
 
-/* 구분선 기준 우측 */
+/* li는 동적으로 생성할 예정임 */
+#index li {
+  color: #353535;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*! 구분선 기준 우측 */
 #container {
   width: 500px; /* 요구사항 */
   display: flex;
