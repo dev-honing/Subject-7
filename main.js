@@ -38,3 +38,6 @@ function appendToIndex() {
   // 각 학생 이름에 대해 createLi 함수를 호출해 li 태그 생성 및 이름 추가
   studentName.forEach(name => createLi(name));
 }
+
+// index에 li 태그 추가
+appendToIndex();
