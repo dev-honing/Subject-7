@@ -37,7 +37,13 @@
   font-weight: 400;
   line-height: normal;
   flex-grow: 1; /* 남은 높이를 차지하도록 설정 */
+  outline: 2px solid transparent; 
+  transition: outline 0.3s ease; 
 }
+#index li:hover {
+  outline-color: #3498db; 
+}
+
 
 /*! 구분선 기준 우측 */
 #container {
