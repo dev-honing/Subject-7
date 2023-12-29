@@ -6,6 +6,9 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// 미들웨어 설정으로 정적 파일들 제공
+app.use(express.static(path.join(__dirname, 'public')));
+
 // 루트 경로에 대한 GET 요청 처리
 app.get('/', (req, res) => {
   const indexPath = path.join(__dirname, 'index.html');
