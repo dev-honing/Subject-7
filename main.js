@@ -7,7 +7,7 @@ function createLi(name) {
 
   // 새로운 영역을 생성하고 li 태그 좌측에 추가
   const dotElement = document.createElement("span");
-  dotElement.textContent = '●';
+  dotElement.textContent = '∙';
   dotElement.style.alignSelf = "start"
   index.appendChild(dotElement);
 
