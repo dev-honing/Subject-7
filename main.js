@@ -51,12 +51,23 @@ appendToIndex();
 function toggleLiStyles(element) {
   // 클릭된 요소에 clicked 클래스를 추가/제거
   element.classList.toggle("clicked");
-  
+
+  // 모든 li 태그 가져오기
+  const allLiElements = document.querySelectorAll('#index li');
+
+  // 클릭된 li를 제외한 나머지 li에 투명도를 50%로 설정
+  allLiElements.forEach(li => {
+    if (li !== element) {
+      li.style.opacity = element.classList.contains("clicked") ? 0.5 : 1;
+    }
+  });
+
   // li 태그의 스타일을 동적으로 추가/제거
-  // 색상
-  element.style.color = element.classList.contains("clicked") ? "#353535" : "initial";
-  // 폰트 크기
-  element.style.fontSize = element.classList.contains("clicked") ? "12px" : "initial";
+  const isClicked = element.classList.contains("clicked");
+
+  // 텍스트 정렬
+  element.style.textAlign = isClicked ? "right" : "left";
+  
   // 폰트 굵기
-  element.style.fontWeight = element.classList.contains("clicked") ? "400" : "initial";
+  element.style.fontWeight = isClicked ? "bolder" : "initial"
 }
