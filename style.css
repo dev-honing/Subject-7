@@ -10,22 +10,71 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #e8e8e8;
 }
 
+/* 구분선 기준 좌측 */
 #index {
   width: 150px; /* 임의값 */
   display: flex;
   flex-direction: column;
-  border: 1px solid #000;
 }
 
+/* 구분선 기준 우측 */
 #container {
   width: 500px; /* 요구사항 */
   display: flex;
   flex-direction: column;
-  border: 1px solid #000;
 }
 
-#container div {
-  display:flex
+#container * {
+  display: flex;
+}
+
+#container h1 {
+  color: #4b4b4b;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content-introduce {
+  flex-direction: column;
+}
+.introduce {
+  color: #919191;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#container h2 {
+  color: #4b4b4b;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-forte {
+  flex-direction: column;
+}
+
+.forte {
+  color: #919191;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.searchForm {
+  flex-direction: column;
 }
