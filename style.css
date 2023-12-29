@@ -36,7 +36,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border: 1px dotted #353535;
   flex-grow: 1; /* 남은 높이를 차지하도록 설정 */
 }
 
@@ -107,7 +106,6 @@
 
 .searchForm {
   flex-direction: column;
-  border: 1px dotted #000;
   margin-top: auto;
 }
 
@@ -116,6 +114,7 @@
   border-radius: 10px;
   background: #f3f3f3;
   text-indent: 1rem;
+  margin-bottom: 1rem;
 }
 
 .btn-Show {
