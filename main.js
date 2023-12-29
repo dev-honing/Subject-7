@@ -1,18 +1,26 @@
-// main.js
-
 // li 태그를 동적으로 생성하는 함수
 function createLi(name) {
   // index에 접근
   const index = document.getElementById("index");
   // li 태그를 생성
   const liElement = document.createElement("li");
+
+  // 새로운 영역을 생성하고 li 태그 좌측에 추가
+  const dotElement = document.createElement("span");
+  dotElement.textContent = '●';
+  dotElement.style.alignSelf = "start"
+  index.appendChild(dotElement);
+
   // li 태그에 학생 이름 추가
-  liElement.textContent = name;
+  const nameElement = document.createElement("span");
+  nameElement.textContent = name;
+  liElement.appendChild(nameElement);
 
   // li 태그에 클릭 이벤트 추가
   liElement.addEventListener("click", () => {
-    toggleLiStyles(liElement);
+    toggleLiStyles(liElement, dotElement);
   });
+
   // 생성한 li 태그를 index에 자식 요소로 추가
   index.appendChild(liElement);
 }
@@ -48,7 +56,7 @@ function appendToIndex() {
 appendToIndex();
 
 // li 태그의 스타일을 토글하는 함수
-function toggleLiStyles(element) {
+function toggleLiStyles(element, dotElement) {
   // 클릭된 요소에 clicked 클래스를 추가/제거
   element.classList.toggle("clicked");
 
@@ -69,5 +77,9 @@ function toggleLiStyles(element) {
   element.style.textAlign = isClicked ? "right" : "left";
   
   // 폰트 굵기
-  element.style.fontWeight = isClicked ? "bolder" : "initial"
+  element.style.fontWeight = isClicked ? "bolder" : "initial";
+
+  // 클릭 시 dotElement를 영역 밖으로 이동
+  dotElement.style.position = isClicked ? "absolute" : "relative";
+  // dotElement.style.left = isClicked ? 
 }
