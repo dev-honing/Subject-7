@@ -2,7 +2,7 @@
 
 const Content = () => {
   return (
-    <div id="Content">
+    <div id="content">
       <div className="content-introduce">
         <h1>변호녕 소개</h1>
         <div className="introduce"></div>

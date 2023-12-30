@@ -1,2 +1,18 @@
 /* src/Component/Container/Container.css */
 
+#container {
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-direction: row;
+}
+
+#index {
+  width: 160px;
+  background-color: brown;
+}
+
+#content {
+  width: 500px;
+  background-color: blue;
+}
