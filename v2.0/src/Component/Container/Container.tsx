@@ -7,6 +7,7 @@ import Content from "./Content/Content";
 const Container = () => {
   return <div id="container">
     <Index />
+    <div className="divider"></div>
     <Content />
   </div>;
 };
