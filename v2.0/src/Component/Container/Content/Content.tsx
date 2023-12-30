@@ -1,4 +1,4 @@
-// src/Component/Content.tsx
+// src/Component/Container/Content/Content.tsx
 
 const Content = () => {
   return (

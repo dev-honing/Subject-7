@@ -1,8 +1,8 @@
-// src/Component/Container.tsx
+// src/Component/Container/Container.tsx
 
 import "./Container.css";
-import Index from "./Index";
-import Content from "./Content";
+import Index from "./Index/Index";
+import Content from "./Content/Content";
 
 const Container = () => {
   return <div id="container">

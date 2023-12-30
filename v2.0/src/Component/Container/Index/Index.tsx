@@ -1,4 +1,4 @@
-// src/Component/Index.tsx
+// src/Component/Container/Index/index.tsx
 
 import './Index.css'
 
