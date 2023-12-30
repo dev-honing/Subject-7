@@ -1,2 +1,10 @@
 /* src/Component/Index.css */
 
+li {
+  color: #353535;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
