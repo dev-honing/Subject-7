@@ -4,9 +4,12 @@ import "./SearchForm.css";
 
 const SearchForm = () => {
   return (
-    <form action="/">
-      <input type="text" placeholder="Write your name." />
-      <button type="submit">Show</button>
+    <form action="/" method="get">
+      <input type="text" className="searchName" placeholder="Write your name." />
+      <label htmlFor="searchName"></label>
+
+      <button type="submit" className="showButton">Show</button>
+      <label htmlFor="showButton"></label>
     </form>
   );
 };
