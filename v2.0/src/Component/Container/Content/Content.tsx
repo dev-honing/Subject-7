@@ -1,6 +1,7 @@
 // src/Component/Container/Content/Content.tsx
 
 import "./Content.css";
+import SearchForm from './SearchForm/SearchForm';
 
 const Content = () => {
   return (
@@ -43,10 +44,7 @@ const Content = () => {
           sapien sed quis consectetur turpis fusce sem facilisis eget.
         </div>
       </div>
-      <form action="/" method="get">
-        <input type="text" />
-        <button type="submit">Show</button>
-      </form>
+      <SearchForm />
     </div>
   );
 };
