@@ -1,5 +1,9 @@
 /* src/Component/Container/Index/Index.css */
 
+ul {
+  flex-direction: column;
+}
+
 li {
   color: #353535;
   font-family: Inter;
@@ -7,4 +11,6 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 1em;
+  justify-content: space-around;
 }

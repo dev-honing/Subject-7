@@ -1,5 +1,10 @@
 /* src/Component/Container/Content/SearchForm/SearchForm.css */
 
+#searchForm, #searchForm * {
+  display: flex;
+  flex-direction: column;
+}
+
 .searchName {
   /* Layout */
   width: 500px;
@@ -17,6 +22,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  /* Spacing */
+  margin-top: 3rem;
 }
 
 .showButton {
@@ -36,4 +44,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  /* Spacing */
+  margin-top: 1rem;
 }

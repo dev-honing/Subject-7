@@ -1,14 +1,22 @@
 /* src/Component/Container/Content/Content.css */
 
 /* 공통 적용 */
-h1, h2 {
+.content-introduce, .content-forte{
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  width: 500px;
   color: #4b4b4b;
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.introduce, .forte {
+.introduce,
+.forte {
+  width: 500px;
   color: #919191;
   text-align: justify;
   font-family: Inter;
@@ -18,11 +26,13 @@ h1, h2 {
   line-height: normal;
 }
 
-
 /* 개별 적용 */
 h1 {
   font-size: 32px;
+  margin-bottom: 3rem;
 }
 h2 {
   font-size: 24px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
