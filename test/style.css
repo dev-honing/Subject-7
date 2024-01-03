@@ -45,6 +45,13 @@ body {
   display: flex;
 }
 
+li, h1 {
+  line-height: 1.5; /* 라인 높이 설정 */
+  margin: 0; /* 마진 제거 */
+  padding: 0; /* 패딩 제거 */
+}
+
+
 li {
   color: #353535;
   font-family: Inter;
@@ -54,11 +61,6 @@ li {
   line-height: normal;
 }
 
-/* 각 열의 스타일링 */
-#index,
-#content {
-  flex: 1;
-}
 
 h1 {
   color: #4b4b4b;
