@@ -6,7 +6,32 @@ body {
   padding: 0;
 }
 
+#header {
+  height: 10vh;
+  display: flex;
+}
+
 #container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+#container > #index {
+  display: flex;
+  justify-content: center;
+
+}
+
+#container > #content {
+  display: flex;
+  justify-content: center;
+
+}
+
+#footer {
+  height: 10vh;
   display: flex;
 }
 
@@ -23,13 +48,8 @@ li {
 #index,
 #content {
   flex: 1;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-}
-
-#index li {
-  margin-bottom: 10px; /* li 사이 간격 설정 */
 }
 
 h1 {
@@ -66,7 +86,6 @@ p {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px;
 }
 
 #index {
