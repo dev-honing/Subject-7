@@ -1,0 +1,165 @@
+/* style.css */
+
+/* 전반적인 스타일링 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 10vh;
+  display: flex;
+}
+
+#container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+#container > #index {
+  width: 30%; /* #index의 width를 30%로 설정 */
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.divider {
+  width: 1px; /* 구분선의 너비를 1px로 설정 */
+  height: 80vh;
+  background: #a5a5a5;
+
+  position: absolute;
+}
+
+#container > #content {
+  width: 70%; /* #content의 width를 70%로 설정 */
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+
+
+}
+
+#footer {
+  height: 10vh;
+  display: flex;
+}
+
+li,
+h1 {
+  line-height: 1.5; /* 라인 높이 설정 */
+  margin: 0; /* 마진 제거 */
+  padding: 0; /* 패딩 제거 */
+}
+
+li {
+  color: #353535;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+}
+
+h1 {
+  color: #4b4b4b;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2 {
+  color: #4b4b4b;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  color: #919191;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* 각 섹션의 스타일링 */
+#header,
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+#index {
+  background-color: #f0f0f0;
+}
+
+#content {
+  background-color: #e0e0e0;
+}
+
+.introduce, .forte {
+  width: 500px;
+
+}
+
+.searchForm {
+  /* Layout */
+
+  width: 500px;
+  height: 32px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  /* Layout */
+  height: 32px;
+  flex-shrink: 0;
+
+  /* Style */
+  border-radius: 10px;
+  background: #f3f3f3;
+
+  /* Typography */
+  color: #919191;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  /* Layout */
+  height: 64px;
+  flex-shrink: 0;
+
+  /* Style */
+  border-radius: 10px;
+  background: rgba(145, 145, 145, 0.3);
+
+  /* Typography */
+  color: #f3f3f3;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
